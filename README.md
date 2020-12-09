@@ -1,1 +1,1 @@
-# epfl
+# EPFL Course Projects
