@@ -3,12 +3,7 @@
 ## Housing-Prices
 The housing-prices project uses the Ames, Iowa, housing data set by Dean De Cock. It consists of 2930 observations and 82 features. The features are typical characteristics that may impact the sale price of a house, such as floor sizes, paved or unpaved streets, or availability of pools. 
 
-The project is mainly concerned with linear regression in combination with L1 and/or L2 regularization to combat overfitting. The goal is predict the continuously distributed target variable: sale price. Results are measured by the **mean absolute error**, which is denoted in US Dollar. Furthermore, the adjusted R-squared metric
-
-$$\bar{R}^2 = 1-(1-R^2)\frac{n-1}{n-p-1}, \text{with n = number of observations, p = number of features} 
-$$
-
-will be tracked. Throughout the project, I will also track a self-defined metric called *error ratio*, which is supposed to shine light on how large the model error is in comparison to the median sale price of a house. The smaller the resulting ratio, the more reliable our model predictions are (or, i.e. the less impactful our error is) when considering the median house price.
+The project is mainly concerned with linear regression in combination with L1 and/or L2 regularization to combat overfitting. The goal is predict the continuously distributed target variable: sale price. Results are measured by the **mean absolute error**, which is denoted in US Dollar. Furthermore, the adjusted R-squared metric will be tracked. Throughout the project, I will also track a self-defined metric called *error ratio*, which is supposed to shine light on how large the model error is in comparison to the median sale price of a house. The smaller the resulting ratio, the more reliable our model predictions are (or, i.e. the less impactful our error is) when considering the median house price.
 
 In the project, three models are built: 
 * The first one is a simple model with only 2 features.
@@ -20,7 +15,7 @@ In the project, three models are built:
     * Due to linearly dependent columns, some of the columns - after applying preprocessing steps - had to be dropped. The custom algorithm to find linearly dependent columns is included in the code. 
 
 ### Results
-| Model | \# of Features| \# of Features (OHE)| MAE (\\$)| RSS | $R^2$ | adj. $R^2$| Error Ratio (%)|
+| Model | \# of Features| \# of Features (OHE)| MAE ($)| RSS | R^2 | adj. R^2| Error Ratio (%)|
 |-------|:-------------:|:-------------------:|:--------:|:---:|:-----:|:---------:|:--------------:|
 |Simple Model|2|2|23,479|30.130|0.766|0.765| 13.89|
 |Intermediate Model|20|24|15,664|17.633|0.863|0.860|9.27|
