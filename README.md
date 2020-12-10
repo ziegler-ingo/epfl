@@ -15,7 +15,7 @@ In the project, three models are built:
     * Due to linearly dependent columns, some of the columns - after applying preprocessing steps - had to be dropped. The custom algorithm to find linearly dependent columns is included in the code. 
 
 ### Results
-| Model | \# of Features| \# of Features (OHE)| MAE ($)| RSS | R^2 | adj. R^2| Error Ratio (%)|
+| Model | \# of Features| \# of Features (OHE)| MAE ($)| RSS | R2 | adj. R2| Error Ratio (%)|
 |-------|:-------------:|:-------------------:|:--------:|:---:|:-----:|:---------:|:--------------:|
 |Simple Model|2|2|23,479|30.130|0.766|0.765| 13.89|
 |Intermediate Model|20|24|15,664|17.633|0.863|0.860|9.27|
@@ -34,7 +34,7 @@ Using one of Tensorflow Hub's pre-trained models, MobileNet V2, to extract high-
 	* The CNN is trained from scratch, i.e. it does **not** use the extracted high-level features
 	
 ### Results
-|Model   |test accuracy (%)|
+|Model   |Test Accuracy|
 |:------:|:---------------:|
 |k-NN|0.98|
 |Decision Tree|0.74|
@@ -77,7 +77,7 @@ The final, preprocessed and encoded shapes for the models are:
 * X_val final shape = (41424, 223)
 * X_te final shape = (41378, 223)
 
-#### Genereal Accuracy Results
+#### General Accuracy Results
 |Model   | Accuracy |
 |--------|:--------:|
 |Baseline|0.58|
